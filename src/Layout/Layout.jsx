@@ -10,6 +10,7 @@ import OrderListFilter from "../components/OrderListFilter";
 import ProductStock from "../components/ProductStock";
 import Calendar from "../components/Calendar";
 import PricingPlans from "../components/PricingPlan";
+import ToDoList from "../components/ToDoList";
 
 const Layout = () => {
   return (
@@ -18,6 +19,7 @@ const Layout = () => {
       <div className="flex flex-row">
         <Sidebar />
         <div className="w-[83%] flex flex-col pl-6 pt-6 pb-20 pr-6">
+          <ToDoList />
           <PricingPlans />
           <ProductStock />
           <OrderList />
