@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Nunito Sans", sans-serif;
+  outline: none;
+  transition: 0.1s;
+}
+
+@layer utilities {
+  /* Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+}
+
+body {
+  background: #f5f6fa;
+}
+
+.swiper-button-prev {
+  width: 35px !important;
+  height: 35px !important;
+  color: black !important;
+  background: white !important;
+  border-radius: 50%;
+}
+
+.swiper-button-prev::after {
+  content: "<" !important;
+  font-size: 20px;
+}
