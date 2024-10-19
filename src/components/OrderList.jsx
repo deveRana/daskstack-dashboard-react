@@ -116,8 +116,12 @@ const OrderList = () => {
             Showing 1-09 of 78
           </p>
           <div className="flex flex-row">
-            <i class="fa-solid fa-chevron-left bg-white px-4 py-2 rounded-tl-md rounded-tr-md border cursor-pointer "></i>
-            <i class="fa-solid fa-chevron-right bg-white px-4 py-2 rounded-bl-md rounded-br-md border cursor-pointer "></i>
+            <button>
+              <i class="fa-solid fa-chevron-left bg-white px-4 py-2 rounded-tl-md rounded-bl-md border cursor-pointer "></i>
+            </button>
+            <button>
+              <i class="fa-solid fa-chevron-right bg-white px-4 py-2 rounded-tr-md rounded-br-md border cursor-pointer "></i>
+            </button>
           </div>
         </div>
       </div>

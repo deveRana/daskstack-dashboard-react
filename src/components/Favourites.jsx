@@ -15,7 +15,6 @@ const Favourites = () => {
           key={index}
           className="max-w-xs w-full bg-white rounded-xl shadow-lg overflow-hidden"
         >
-          {console.log(index)}
           <div className="relative">
             <Swiper
               navigation={{
