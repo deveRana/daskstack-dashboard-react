@@ -13,6 +13,9 @@ import PricingPlans from "../components/PricingPlan";
 import ToDoList from "../components/ToDoList";
 import Settings from "../components/Settings";
 import TeamMemberForm from "../components/TeamMemberForm";
+import NotificationTab from "../components/NotificationTab";
+import AccountTab from "../components/AccountTab";
+import AllTeamPage from "../components/AllTeamPage";
 
 const Layout = () => {
   return (
@@ -21,6 +24,9 @@ const Layout = () => {
       <div className="flex flex-row">
         <Sidebar />
         <div className="w-[83%] flex flex-col pl-6 pt-6 pb-20 pr-6">
+          <AllTeamPage />
+          <AccountTab />
+          <NotificationTab />
           <TeamMemberForm />
           <Settings />
           <ToDoList />
