@@ -1,6 +1,6 @@
 import React from "react";
 
-const Navbar = () => {
+const Header = () => {
   return (
     <>
       <header className="flex flex-row bg-white">
@@ -96,4 +96,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default Header;

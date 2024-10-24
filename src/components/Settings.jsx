@@ -24,7 +24,7 @@ const Settings = () => {
   };
 
   return (
-    <div className="mt-10">
+    <div>
       <h2 className="text-3xl font-bold">General Settings</h2>
 
       <form

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function App() {
+const ToDoList = () => {
   const [todos, setTodos] = useState([
     { id: 1, task: "Learn React", completed: false, important: false },
     { id: 2, task: "Set up Tailwind CSS", completed: true, important: false },
@@ -39,7 +39,7 @@ function App() {
   };
 
   return (
-    <div className="mt-10">
+    <div>
       <h2 className="text-3xl font-bold">Add New To-Do</h2>
 
       <div className="flex justify-between bg-white py-6 px-10 mt-10">
@@ -52,7 +52,7 @@ function App() {
         />
         <button
           onClick={addTodo}
-          className="bg-blue-500 text-white px-4 py-2 rounded-md ml-2"
+          className="bg-blue-500 hover:bg-blue-700 text-white px-4 py-2 rounded-md ml-2"
         >
           Add
         </button>
@@ -111,6 +111,6 @@ function App() {
       </ul>
     </div>
   );
-}
+};
 
-export default App;
+export default ToDoList;

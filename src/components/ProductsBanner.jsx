@@ -11,7 +11,7 @@ import { Navigation } from "swiper/modules";
 const ProductsBanner = () => {
   return (
     <>
-      <div className="mt-10 bg-white relative">
+      <div className="bg-white relative">
         <Swiper
           navigation={{
             nextEl: ".custom-banner-next",

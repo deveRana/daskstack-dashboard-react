@@ -117,8 +117,8 @@ const PricingPlans = () => {
   ];
 
   return (
-    <div className="mt-10">
-      <h2 className="text-3xl font-bold">Dashboard</h2>
+    <div>
+      <h2 className="text-3xl font-bold">Pricing</h2>
       <div className="flex flex-wrap justify-start gap-10">
         {plans.map((plan, index) => (
           <PricingCard key={index} plan={plan} />

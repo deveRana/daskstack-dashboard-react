@@ -3,31 +3,37 @@ export const sidebarMenu1 = [
     title: "Dashboard",
     icon: "fa-solid fa-gauge",
     state: true,
+    route: "/",
   },
   {
     title: "Products",
     icon: "fa-solid fa-cart-shopping",
     state: false,
+    route: "/products",
   },
   {
     title: "Favourites",
     icon: "fa-solid fa-heart",
     state: false,
+    route: "/favourites",
   },
   {
     title: "Inbox",
     icon: "fa-solid fa-comments",
     state: false,
+    route: "/inbox",
   },
   {
     title: "Order Lists",
     icon: "fa-solid fa-list-check",
     state: false,
+    route: "/order-lists",
   },
   {
     title: "Product Stock",
     icon: "fa-solid fa-cubes-stacked",
     state: false,
+    route: "/product-stocks",
   },
 ];
 
@@ -36,41 +42,25 @@ export const sidebarMenu2 = [
     title: "Pricing",
     icon: "fa-solid  fa-money-check-dollar",
     state: false,
-  },
-  {
-    title: "Calendar",
-    icon: "fa-solid fa-calendar-days",
-    state: false,
+    route: "/pricing-plans",
   },
   {
     title: "To-Do",
     icon: "fa-solid fa-clipboard-list",
     state: false,
+    route: "/todo-list",
   },
   {
     title: "Contact",
     icon: "fa-solid fa-id-card",
     state: false,
-  },
-  {
-    title: "Invoice",
-    icon: "fa-solid fa-receipt",
-    state: false,
-  },
-  {
-    title: "UI Elements",
-    icon: "fa-solid fa-window-restore",
-    state: false,
+    route: "/contacts",
   },
   {
     title: "Team",
     icon: "fa-solid fa-people-group",
     state: false,
-  },
-  {
-    title: "Table",
-    icon: "fa-solid fa-table",
-    state: false,
+    route: "/allteam",
   },
 ];
 
@@ -79,11 +69,13 @@ export const sidebarMenu3 = [
     title: "Settings",
     icon: "fa-solid fa-gear",
     state: false,
+    route: "/settings",
   },
   {
     title: "Logout",
     icon: "fa-solid fa-power-off",
     state: false,
+    route: "/logout",
   },
 ];
 

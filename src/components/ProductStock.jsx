@@ -3,7 +3,7 @@ import { productStockList } from "../data/data";
 
 const ProductStock = () => {
   return (
-    <div className="mt-10">
+    <div>
       <div className="flex flex-row items-center justify-between">
         <h2 className="text-3xl font-bold">Product Stock</h2>
         <div className=" relative mx-12">

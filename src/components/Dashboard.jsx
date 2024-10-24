@@ -3,7 +3,7 @@ import { dashboardArr1 } from "../data/data";
 
 const Dashboard = () => {
   return (
-    <div className="mt-32" >
+    <div>
       <h2 className="text-3xl font-bold">Dashboard</h2>
 
       <div className="mt-6 grid grid-cols-4 ">

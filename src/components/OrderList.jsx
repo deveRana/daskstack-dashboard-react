@@ -4,7 +4,7 @@ import { orderList } from "../data/data";
 const OrderList = () => {
   return (
     <>
-      <div className="mt-10">
+      <div>
         <h2 className="text-3xl font-bold">Order Lists</h2>
 
         <div className="my-6 flex flex-row items-center  bg-white w-fit border rounded-md text-sm font-bold">

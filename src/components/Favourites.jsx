@@ -9,7 +9,7 @@ import "swiper/css/navigation";
 import { Navigation } from "swiper/modules";
 const Favourites = () => {
   return (
-    <div className="mt-10 grid grid-cols-3 gap-y-8">
+    <div className="grid grid-cols-3 gap-y-8">
       {Array.from({ length: 9 }, (_, index) => (
         <div
           key={index}
