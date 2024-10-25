@@ -18,12 +18,6 @@ export const sidebarMenu1 = [
     route: "/favourites",
   },
   {
-    title: "Inbox",
-    icon: "fa-solid fa-comments",
-    state: false,
-    route: "/inbox",
-  },
-  {
     title: "Order Lists",
     icon: "fa-solid fa-list-check",
     state: false,
@@ -75,7 +69,7 @@ export const sidebarMenu3 = [
     title: "Logout",
     icon: "fa-solid fa-power-off",
     state: false,
-    route: "/logout",
+    route: "/#",
   },
 ];
 
