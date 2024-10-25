@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 
 const NotificationTab = () => {
-  const [isOpen, setIsOpen] = useState(false);
   const notifications = [
     "You have a new message",
     "Your order has been shipped",
@@ -29,7 +28,7 @@ const NotificationTab = () => {
   };
 
   return (
-    <div className="mt-10">
+    <div className="absolute top-14 right-10 z-50">
       <div className=" mt-2 w-64 bg-white shadow-lg rounded-lg">
         <div className="p-4 border-b">
           <h2 className="font-semibold text-lg text-[#404040]">

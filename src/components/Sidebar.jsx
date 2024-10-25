@@ -1,9 +1,13 @@
 import React from "react";
 import { sidebarMenu1, sidebarMenu2, sidebarMenu3 } from "../data/data";
 import SideBarMenu from "./SideBarMenu";
-const Sidebar = () => {
+const Sidebar = ({ showSidebar }) => {
   return (
-    <div className="w-[17%] min-h-screen flex flex-col antialiased bg-gray-50 text-gray-800">
+    <div
+      className={` ${
+        showSidebar ? "w-[17%]" : "w-[0%]"
+      } min-h-screen flex flex-col antialiased bg-gray-50 text-gray-800`}
+    >
       <div className="flex flex-col top-0 left-0 w-full bg-white h-full border-r">
         <div className="overflow-x-hidden flex-grow  no-scrollbar overflow-y-auto">
           <ul className="flex flex-col py-4 space-y-1">

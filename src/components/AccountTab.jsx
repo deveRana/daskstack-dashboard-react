@@ -23,7 +23,7 @@ const AccountTab = () => {
   };
 
   return (
-    <div className="mt-10">
+    <div className="absolute top-14 right-0 z-50">
       <div className=" mt-2 w-64 bg-white shadow-lg rounded-lg">
         <div className="p-4 border-b">
           <h2 className="font-semibold text-lg text-[#404040]">Settings</h2>

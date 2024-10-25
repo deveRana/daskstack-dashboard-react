@@ -1,6 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
+import NotificationTab from "./NotificationTab";
+import AccountTab from "./AccountTab";
 
-const Header = () => {
+const Header = ({ setShowSidebar, showSidebar }) => {
+  const [isNotificationOpen, setIsNotificationOpen] = useState(false);
+
+  const [isAccountTabOpen, setisAccountTabOpen] = useState(false);
+
   return (
     <>
       <header className="flex flex-row bg-white">
@@ -11,7 +17,12 @@ const Header = () => {
         </div>
         <div className="w-[83%] flex items-center justify-between px-6 py-4 border-b">
           <div className="flex items-center w-[50%]">
-            <button className="text-[#202224] ">
+            <button
+              onClick={() => {
+                setShowSidebar(!showSidebar);
+              }}
+              className="text-[#202224] "
+            >
               <i class="fa-solid fa-bars text-2xl"></i>
             </button>
             <div className="w-full relative mx-12">
@@ -26,16 +37,23 @@ const Header = () => {
             </div>
           </div>
           <div className="flex items-center">
-            <button class="relative mx-4">
-              <div class="absolute right-0 top-0">
-                <span class="text-xs text-white p-1 bg-[#F93C65] rounded-full">
-                  12
-                </span>
-              </div>
-              <div class="p-2">
-                <i class="fa-solid fa-bell text-2xl text-[#4880FF] "></i>
-              </div>
-            </button>
+            <div className="relative  mr-8">
+              <button
+                onClick={() => {
+                  setIsNotificationOpen(!isNotificationOpen);
+                }}
+              >
+                <div className="absolute right-0 top-0">
+                  <span className="text-xs text-white p-1 bg-[#F93C65] rounded-full">
+                    12
+                  </span>
+                </div>
+                <div className="p-2">
+                  <i className="fa-solid fa-bell text-2xl text-[#4880FF] " />
+                </div>
+              </button>
+              {isNotificationOpen ? <NotificationTab /> : ""}
+            </div>
 
             <div className="flex flex-row">
               <button className="relative z-10 block w-12 h-12 overflow-hidden rounded-full shadow focus:outline-none">
@@ -52,42 +70,19 @@ const Header = () => {
               </div>
 
               <div className="flex flex-col justify-center ml-4">
-                <button>
-                  <i class="fa-solid fa-chevron-down text-[#565656] border border-gray-400 p-1 rounded-full"></i>
+                <button
+                  onClick={() => {
+                    setisAccountTabOpen(!isAccountTabOpen);
+                  }}
+                >
+                  <i
+                    class={`fa-solid ${
+                      isAccountTabOpen ? "fa-chevron-up" : "fa-chevron-down"
+                    } text-[#565656] border border-gray-400 p-1 rounded-full`}
+                  ></i>
                 </button>
               </div>
-              {/* <transition
-                enter-active-class="transition duration-150 ease-out transform"
-                enter-from-class="scale-95 opacity-0"
-                enter-to-class="scale-100 opacity-100"
-                leave-active-class="transition duration-150 ease-in transform"
-                leave-from-class="scale-100 opacity-100"
-                leave-to-class="scale-95 opacity-0"
-              >
-                <div
-                  v-show="dropdownOpen"
-                  className="absolute right-0 z-20 w-48 py-2 mt-2 bg-white rounded-md shadow-xl"
-                >
-                  <a
-                    href="#"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-indigo-600 hover:text-white"
-                  >
-                    Profile
-                  </a>
-                  <a
-                    href="#"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-indigo-600 hover:text-white"
-                  >
-                    Products
-                  </a>
-                  <a
-                    href="#"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-indigo-600 hover:text-white"
-                  >
-                    Log out
-                  </a>
-                </div>
-              </transition> */}
+              {isAccountTabOpen ? <AccountTab /> : ""}
             </div>
           </div>
         </div>
